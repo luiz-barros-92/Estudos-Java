@@ -73,7 +73,7 @@ public class TelaIdade extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				int an = (Integer) txtAn.getValue();								//Definindo getValue() recebido como Integer.		
 				int id = anoAtual - an; 									//Cálculo da idade com o (anoAtual - an)
-				lblIdade.setText(Integer.toString(id));
+				lblIdade.setText(Integer.toString(id));								//definindo a resposta (id) na label lblIdade e transformando em String
 			}
 		});
 		btnCalc.setFont(new Font("Tahoma", Font.BOLD, 13));
