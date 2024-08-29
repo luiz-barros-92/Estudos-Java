@@ -12,7 +12,7 @@ import java.awt.Font;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import java.awt.event.ActionListener;
-import java.time.LocalDateTime;															                          //data atual do sistema
+import java.time.LocalDateTime;												  //data atual do sistema
 import java.awt.event.ActionEvent;
 import javax.swing.SpinnerNumberModel;
 
@@ -49,8 +49,8 @@ public class TelaIdade extends JFrame {
 		lblNewLabel.setBounds(24, 70, 92, 14);
 		Jframe.add(lblNewLabel);
 		
-		LocalDateTime now = LocalDateTime.now();										                  //importação da biblioteca LocalDateTime
-		int anoAtual = now.getYear();													                        //definindo ano atual
+		LocalDateTime now = LocalDateTime.now();									//importação da biblioteca LocalDateTime
+		int anoAtual = now.getYear();											//definindo ano atual
 		
 		
 		JLabel lblAnoAtual = new JLabel("Ano Atual");
@@ -71,8 +71,8 @@ public class TelaIdade extends JFrame {
 		JButton btnCalc = new JButton("Calcular");
 		btnCalc.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int an = (Integer) txtAn.getValue();										                    //Definindo getValue() recebido como Integer.		
-				int id = anoAtual - an; 													                          //Cálculo da idade com o (anoAtual - an)
+				int an = (Integer) txtAn.getValue();								//Definindo getValue() recebido como Integer.		
+				int id = anoAtual - an; 									//Cálculo da idade com o (anoAtual - an)
 				lblIdade.setText(Integer.toString(id));
 			}
 		});
@@ -93,7 +93,7 @@ public class TelaIdade extends JFrame {
 		Jframe.add(lblNewLabel_3);		
 		
 		
-		JLabel lblNewLabel_2 = new JLabel(Integer.toString(anoAtual));                          //Inserido ao nome da label anoAtual convertida para String
+		JLabel lblNewLabel_2 = new JLabel(Integer.toString(anoAtual));                                                  //Inserido ao nome da label anoAtual convertida para String
 		lblNewLabel_2.setForeground(new Color(255, 0, 0));
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblNewLabel_2.setBounds(95, 11, 46, 14);
