@@ -9,8 +9,8 @@ public class ExercicioRepita {
 		
 		do {
 			n = Integer.parseInt(JOptionPane.showInputDialog(null, 
-					"<html><h3>Informe um número: </h3>"
-					+ "<h5><em>digite 0 para sair</em></h5></html>"));
+			"<html><h3>Informe um número: </h3>"
+			+ "<h5><em>digite 0 para sair</em></h5></html>"));
 			t++;
 			s += n;
 			if (n % 2 == 0) {
