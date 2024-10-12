@@ -29,7 +29,7 @@ public class ExercicioRepita {
 				+ "<br>Total de Pares: " + (p - 1)
 				+ "<br>Total de Ímpares: " + i 
 				+ "<br>Acima de 100: " + c 
-				+ "<br>Média dos Valores: "+ (s / (t - 1))
+				+ "<br>Média dos Valores: " + (s / (t - 1))
 				+ "</html>");		
 	}
 }
