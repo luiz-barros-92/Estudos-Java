@@ -3,8 +3,8 @@ package herancaU2;
 public class Carro extends Veiculo {
 	private int numeroPortas;	
 	
-	public Carro(int numeroPortas) {
-	    super();
+	public Carro(String marca, String modelo, int ano, int numeroPortas) {
+	    super(marca, modelo, ano);
 	    this.numeroPortas = numeroPortas;
 	}
 	
@@ -16,6 +16,8 @@ public class Carro extends Veiculo {
 	}	
 	@Override
 	public void exibirDetalhes() {
+		super.exibirDetalhes();
 		System.out.println("Nº de Portas: " + numeroPortas);
+		System.out.println("------------------");
 	}
 }

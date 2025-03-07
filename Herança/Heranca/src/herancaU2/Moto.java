@@ -3,8 +3,8 @@ package herancaU2;
 public class Moto extends Veiculo {
 	private int cilindradas;
 	
-	public Moto(int cilindradas) {
-	    super();
+	public Moto(String marca, String modelo, int ano, int cilindradas) {
+	    super(marca, modelo, ano);
 	    this.cilindradas = cilindradas;
 	}
 
@@ -16,6 +16,7 @@ public class Moto extends Veiculo {
 	}	
 	@Override
 	public void exibirDetalhes() {
+		super.exibirDetalhes();
 		System.out.println("Cilindradas: " + cilindradas);
 	}	
 }
