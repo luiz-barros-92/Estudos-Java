@@ -18,5 +18,6 @@ public class Moto extends Veiculo {
 	public void exibirDetalhes() {
 		super.exibirDetalhes();
 		System.out.println("Cilindradas: " + cilindradas);
+		System.out.println("------------------");
 	}	
 }
