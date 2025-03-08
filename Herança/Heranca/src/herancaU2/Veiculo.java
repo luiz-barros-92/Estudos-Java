@@ -1,9 +1,9 @@
 package herancaU2;
 
 public class Veiculo {
-	protected String marca;
-	protected String modelo;
-	protected int ano;
+	private String marca;
+	private String modelo;
+	private int ano;
 	
 	public void exibirDetalhes() {		
 	    System.out.println("Marca: " + marca);
